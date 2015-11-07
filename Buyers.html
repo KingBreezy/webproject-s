@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style type="text/css">
+		body{
+				background-color:maroon;
+				font-family:helvetica;
+			}
+		#holder{
+				height=250px;
+				padding=250px;
+			}
+			#header{
+				background-color:#D16C00;
+				color:white;
+				text-align:left;
+				padding:5px;
+				height:110px;
+				margin-top:50px;
+				margin-left:200px;
+				margin-bottom:50px;
+			}
+			#header form search{
+				position:relative;
+				display:inline;
+				float:right;
+			}
+			#holder img{
+				float:left;
+			}
+		#section {
+			background-color:#2ACED1;
+			height:1270px;
+			padding:50px;
+			border-radius:25px;	 	 
+		}
+		#footer {
+			background-color:#2E2E2E;
+			color:white;
+			clear:both;
+			text-align:center;
+			padding:5px;	
+			border-radius: 15px 15px 0px 0px;
+		}
+		#box{
+				margin-left:50%;
+			}
+		</style>
+		<script type="text/javascript" src="js/Buyers.js"></script>
+	</head>
+	<body>
+		<!--The potential buyers' form will ask for contact information such as their names, 
+		addresses and phone numbers etc; and will provide a variety of fields for them to describe their preferences in antique types; 
+		for example: how much they are willing to spend and the age range, place of origin and category of preference.-->
+		<div id="holder">
+			<img src="Images/souvenir.jpg" width="200px" height="220px">
+			<form>
+				<a href="home page.html">Home</a>&nbsp <a href="Buyers.html">Buyers</a>&nbsp <a href="Sellers.html">Sellers</a>
+				<input type="text" name="search" id="box">
+				<input type="submit" value="search">
+			</form>
+			<br>
+			<div id="header">
+				<h1>Caribbean Antiques and Souvenirs</h1>
+				<p>for those lost treasures of a tropical paradise</p>
+			</div>
+		</div>
+		<div id="section">
+			<form name="tosend" onsubmit="return validateForm()" action="">
+				<fieldset style="padding:40px; width:800px">
+					<legend>Personal</legend>
+					<table>
+						<tr>
+							<td>First Name:</td>
+							<td><input type="text" name ="First"></td>
+						</tr> 
+						<tr>
+							<td>Last Name:</td>
+							<td><input type="text" name ="Last"></td>
+						</tr>
+						<tr><td>Address</td></tr>			
+						<tr><td>&nbsp&nbsp Address line 1</td><td><input type="text" name ="Address1"></td></tr>
+						<tr><td>&nbsp&nbsp Address line 2</td><td><input type="text" name ="Address2"></td></tr>
+						<tr><td>&nbsp&nbsp City</td><td><input type="text" name ="City"></td></tr>
+						<tr><td>&nbsp&nbsp State</td><td><input type="text" name ="State"></td></tr>
+						<tr><td>&nbsp&nbsp Country</td><td><input type="text" name ="Country"></td></tr>
+						</tr>
+						<tr>
+							<td>Email:</td>
+							<td><input type="text" name ="Email"></td>
+						</tr>
+						<tr>
+							<td>Phone:</td>
+							<td><input type="number" name ="phone"></td>
+						</tr>
+					</table>
+				</fieldset>
+				<br><br>
+				<fieldset style="padding:40px; width:800px">
+					<legend>Product Info</legend>
+					<table>
+						<tr>
+							<td>Antique product:</td>
+							<td><input type="text" name ="bantiquep"></td>
+						</tr>
+						
+						<tr>
+							<td>Description:</td>
+							<td><textarea rows="5" cols="90"></textarea></td>
+						</tr>
+						<tr>
+						<td colspan="2">
+							<p>---------------------------------------------------------------------------------<p>
+							<td>
+						</tr>
+						<tr>
+							<td>Age:</td>
+							<td>
+								<input type="checkbox" name ="1b2">100-199
+								<input type="checkbox" name ="2b3">200-299<br>
+								<input type="checkbox" name ="3b4">300-399
+								<input type="checkbox" name ="4plus">400+
+							</td>
+						</tr>
+						<tr>
+						<td colspan="2">
+							<p>---------------------------------------------------------------------------------<p>
+							<td>
+						</tr>
+						<tr>
+							<td>Weight:(Kgs)</td>
+							<td>
+								<input type="checkbox" name ="under5">under 5
+								<input type="checkbox" name ="5b10">5-10<br>
+								<input type="checkbox" name ="10b50">10-50
+								<input type="checkbox" name ="50plus">over 50
+							</td>
+						</tr>
+						<tr>
+						<td colspan="2">
+							<p>---------------------------------------------------------------------------------<p>
+							<td>
+						</tr>
+						<tr>
+							<td>Height:(M)</td>
+							<td>
+								<input type="checkbox" name ="antiquep">under 1
+								<input type="checkbox" name ="antiquep">1-4<br>
+								<input type="checkbox" name ="antiquep">5-10
+								<input type="checkbox" name ="antiquep">over 10
+							</td>
+						</tr>
+						<tr>
+						<td colspan="2">
+							<p>---------------------------------------------------------------------------------<p>
+							<td>
+						</tr>
+						<tr>
+							<td>Width:(M)</td>
+							<td>
+								<input type="checkbox" name ="antiquep">under 1
+								<input type="checkbox" name ="antiquep">1-4<br>
+								<input type="checkbox" name ="antiquep">5-10
+								<input type="checkbox" name ="antiquep">over 10
+							</td>
+						</tr>
+						<tr>
+						<td colspan="2">
+							<p>---------------------------------------------------------------------------------<p>
+							<td>
+						</tr>
+						<tr>
+							<td>Length:(M)</td>
+							<td>
+								<input type="checkbox" name ="antiquep">under 1
+								<input type="checkbox" name ="antiquep">1-4<br>
+								<input type="checkbox" name ="antiquep">5-10
+								<input type="checkbox" name ="antiquep">over 10
+							</td>
+							<tr>
+							<td colspan="2">
+							<p>---------------------------------------------------------------------------------<p>
+							<td>
+							</tr>
+						</tr>
+						<tr>
+							<td>Price:(US$)</td>
+							<td>
+								<input type="checkbox" name ="antiquep" value="under 5k">under 50<br>
+								<input type="checkbox" name ="antiquep">50-99
+								<input type="checkbox" name ="antiquep">100-199
+								<input type="checkbox" name ="antiquep">200-299<br>
+								<input type="checkbox" name ="antiquep">300-399
+								<input type="checkbox" name ="antiquep">400-499 
+								<input type="checkbox" name ="antiquep">500 and over
+								
+							</td>
+						</tr>
+						<tr>
+						<td colspan="2">
+							<p>---------------------------------------------------------------------------------<p>
+							<td>
+						</tr>
+					</table>
+				</fieldset>
+				<input type="submit" onclick="ValidateForm()"><br>
+			</form>
+		</div>
+		<br>
+		<div id="footer"><h5>Copyright 2015-2020 (c)</h5></div>
+	</body>
+</html>

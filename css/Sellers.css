@@ -1,0 +1,43 @@
+body{
+		background-color:maroon;
+		font-family:helvetica;
+	}
+	#holder{
+		height=250px;
+		padding=250px;
+	}
+	#header{
+		background-color:#D16C00;
+		color:white;
+		text-align:left;
+		padding:5px;
+		height:110px;
+		margin-top:50px;
+		margin-left:200px;
+		margin-bottom:50px;
+	}
+	#header form search{
+		position:relative;
+		display:inline;
+		float:right;
+	}
+	#holder img{
+		float:left;
+	}
+	#section {
+		background-color:#2ACED1;
+		height:600px;
+		padding:50px;
+		border-radius:25px;
+	}
+	#footer {
+		background-color:#2E2E2E;
+		color:white;
+		clear:both;
+		text-align:center;
+		padding:5px;
+		border-radius: 15px 15px 0px 0px;
+	}
+	#box{
+		margin-left:50%;
+	}

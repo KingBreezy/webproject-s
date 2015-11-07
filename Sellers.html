@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sellers Form</title>
+		<script type="text/javascript" src="js/Sellers.js"></script>
+		<style type="text/css">
+			body{
+		background-color:maroon;
+		font-family:helvetica;
+	}
+	#holder{
+		height=250px;
+		padding=250px;
+	}
+	#header{
+		background-color:#D16C00;
+		color:white;
+		text-align:left;
+		padding:5px;
+		height:110px;
+		margin-top:50px;
+		margin-left:200px;
+		margin-bottom:50px;
+	}
+	#header form search{
+		position:relative;
+		display:inline;
+		float:right;
+	}
+	#holder img{
+		float:left;
+	}
+	#section {
+		background-color:#2ACED1;
+		height:600px;
+		padding:50px;
+		border-radius:25px;
+	}
+	#footer {
+		background-color:#2E2E2E;
+		color:white;
+		clear:both;
+		text-align:center;
+		padding:5px;
+		border-radius: 15px 15px 0px 0px;
+	}
+	#box{
+		margin-left:50%;
+	}
+	</style>
+	</head>
+	<body>
+	<!--outer Header -->
+		<div id="holder">
+			<img src="Images/souvenir.jpg" width="200px" height="220px">
+			<form>
+				<a href="home page.html">Home</a>&nbsp <a href="Buyers.html">Buyers</a>&nbsp <a href="Sellers.html">Sellers</a>
+				<input type="text" name="search" id="box">
+				<input type="submit" value="search">
+			</form>
+			<br>
+			<!--inner Header -->
+			<div id="header">
+				<h1>Caribbean Antiques and Souvenirs</h1>
+				<p>for those lost treasures of a tropical paradise</p>
+			</div>
+		</div>
+		<!--Content Area (form) -->
+		<div id="section">
+			<form onsubmit="return validateForm()">
+				<fieldset style="padding:40px; width:800px">
+					<legend>Personal</legend>
+					<table>
+						<tr>
+							<td>First Name:</td>
+							<td><input type="text" id ="fname" ></td>
+						</tr> 
+						<tr>
+							<td>Last Name:</td>
+							<td><input type="text" id ="lname"></td>
+						</tr>
+						<tr>
+							<td>Email:</td>
+							<td><input type="text" id ="email"></td>
+						</tr> 
+						<tr>
+							<td>Phone:</td>
+							<td><input type="number" id ="phone"></td>
+						</tr>
+					</table>
+				</fieldset>
+			
+				<fieldset style="padding:40px; width:800px">
+					<legend>Product Info</legend>
+					<table>
+						<tr>
+							<td>Antique product:</td>
+							<td><input type="text" id ="AntiqueName" ></td>
+						</tr>
+						<tr>
+							<td>Description:</td>
+							<td><textarea rows="5" cols="90" id="des"></textarea></td>
+						</tr>
+						<tr>
+							<td>Age:</td>
+							<td><input type="number" id ="age" ></td>
+						</tr>
+						<tr>
+							<td>Weight:</td>
+							<td><input type="number" id ="weight"></td>
+						</tr>
+						<tr>
+							<td>Height:</td>
+							<td><input type="number" id ="Height" ></td>
+						</tr>
+						<tr>
+							<td>Width:</td>
+							<td><input type="number" id ="Width"></td>
+						</tr>
+						<tr>
+							<td>Length:</td>
+							<td><input type="number" id ="length"></td>
+						</tr>
+						<tr>
+							<td>Approx value(us)$</td>
+							<td><input type="number" id ="ApproxPrice"></td>
+						</tr>
+						<tr>
+							<td>Picture:</td>
+							<td><input type="file" id ="Picture"></td>
+						</tr>
+					</table>
+				</fieldset>
+				<input type="submit"><br>
+			</form>
+		</div>
+		<br>
+		<!--Footer section-->
+		<div id="footer"><h5>Copyright 2015-2020 (c)</h5></div>
+	</body>
+</html>
